@@ -1,4 +1,5 @@
 import './App.css';
+import gptLogo from "./assets/chatgpt.svg"
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <div className='upperSide'>
           <div className='upperSideTop'>
             <img src='' alt='' /><span className='brand'>ChatGPT</span>
-            <button className='midBtn'><img src='' alt='' /><span className='addBtn'>ChatGPT</span>New Chat</button>
+            <button className='midBtn'><img src={gptLogo} alt='logo' /><span className='addBtn'>ChatGPT</span>New Chat</button>
             <div className='upperSideBottom'>
               <div className='query'><img src='' alt='' />What is Programming ?</div>
               <div className='query'><img src='' alt='' />What is Programming ?</div>
