@@ -27,3 +27,16 @@ body {
 .main {
   flex: 9;
 }
+
+.logo {
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.upperSide {
+  padding: 2.5rem;
+}
+
