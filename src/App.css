@@ -38,5 +38,35 @@ body {
 
 .upperSide {
   padding: 2.5rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 70%;
 }
+
+.upperSideTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+
+.addBtn {
+  height: 2rem;
+  padding-right: 1rem;
+}
+
+.midBtn {
+  background: #5a4bff;
+  border: none;
+  color: wheat;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
 
