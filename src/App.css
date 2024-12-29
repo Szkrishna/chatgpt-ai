@@ -11,7 +11,7 @@ html {
 body {
   background: rgb(3, 0, 31);
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 .App {
@@ -20,7 +20,7 @@ body {
 }
 
 .sideBar {
-  flex: 3;
+  flex: 2;
   /* border-right: 1px solid rgb(100, 100, 100); */
   background-color: #171717;
 }
@@ -114,14 +114,29 @@ body {
 }
 
 .main {
-  flex: 9;
-  min-height: calc(100vh - 14rem);
+  flex: 10;
+  min-height: calc(100vh - 15rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6rem 8rem;
   padding-bottom: 0rem;
   background-color: #212121;
+}
+
+.main .nav {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  color: #adadad;
+}
+
+.main .nav img {
+  width: 3rem;
+  border-radius: 50%;
 }
 
 .chats {
@@ -130,7 +145,7 @@ body {
   scroll-behavior: smooth;
   width: 65%;
   max-width: 100rem;
-  height: calc(100vh - 17rem);
+  height: calc(100vh - 20rem);
 }
 
 .chats::-webkit-scrollbar {
@@ -169,7 +184,7 @@ body {
 }
 
 .inp {
-  padding: 0.5rem;
+  padding: 0.75rem;
   background-color: #2f2f2f;
   border-radius: 2rem;
   width: 70%;
@@ -178,6 +193,7 @@ body {
 .inp .text {
   width: 100%;
   font-size: 1.6rem;
+  background-color: #2f2f2f !important;
 }
 
 .inp input::placeholder {
@@ -192,19 +208,36 @@ body {
   color: white;
 }
 
-.inp>input, .send {
+.inp>input, .chatFooterIcon {
   background: transparent;
   border: none;
+  padding: 0.75rem;
+}
+
+
+.inp>input, .chatFooterIcon:hover {
+  background: #5d5d5d;
+  border-radius: 0.75rem;
+}
+
+
+.inpBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchIcon {
+  width: 2rem;
+  border-radius: 0.5rem;
+  filter: brightness(0) invert(1);
 }
 
 .chatFooter> p{
-  margin: 2rem 0rem;
-  color: rgb(180, 180, 180);
-  font-size: 1.2rem;
+
 }
 
-@media (max-width: 768px) {
-  .App {
-    flex-direction: column;
-  }
+.footer {
+  color: rgb(180, 180, 180);
+  font-size: 1.2rem;
+  margin: 1rem auto;
 }

@@ -1,6 +1,9 @@
 import './App.css';
 import gptLogo from "./assets/chatgpt.svg";
 import addBtn from "./assets/add-30.png";
+import attach from "./assets/attch.png";
+import toolBox from "./assets/tool.png";
+import website from "./assets/web.png";
 import msgIcon from "./assets/message.svg";
 import home from "./assets/home.svg";
 import saved from "./assets/bookmark.svg";
@@ -36,6 +39,11 @@ function App() {
         </div>
       </div>
       <div className='main'>
+        <div className="nav">
+          <p>ChatGPT</p>
+          <img src={userIcon} alt="user-icon" />
+        </div>
+        <div className='main-container'></div>
         <div className='chats'>
           <div className='chat'>
             <img className='chatImg' src={userIcon} alt='user-icon' />
@@ -50,12 +58,27 @@ function App() {
           <div className='inp'>
             <input className='text' placeholder='Message ChatGPT' />
             <div className='inpBottom'>
-              <button className='send'>
-                <img src={sendBtn} alt='send' />
-              </button>
+              <div>
+                <button className='chatFooterIcon' title='Attach files'>
+                  <img src={attach} alt='send' className='searchIcon' />
+                </button>
+                <button className='chatFooterIcon' title='View tools'>
+                  <img src={toolBox} alt='send' className='searchIcon' />
+                </button>
+                <button className='chatFooterIcon' title='Search on web'>
+                  <img src={website} alt='send' className='searchIcon' />
+                </button>
+              </div>
+              <div>
+                <button className='chatFooterIcon' title='Send'>
+                  <img src={sendBtn} alt='send' className='searchIcon' />
+                </button>
+              </div>
             </div>
           </div>
-          <p>ChatGPT can make mistakes. Check important info.</p>
+          <div className='footer'>
+            <p>ChatGPT can make mistakes. Check important info.</p>
+          </div>
         </div>
       </div>
     </div>
