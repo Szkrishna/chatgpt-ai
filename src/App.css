@@ -199,6 +199,8 @@ body {
 
 .chatFooter> p{
   margin: 2rem 0rem;
+  color: rgb(180, 180, 180);
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
