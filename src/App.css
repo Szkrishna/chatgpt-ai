@@ -69,4 +69,23 @@ body {
   border-radius: 0.5rem;
 }
 
+.query {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98, 1);
+  color: rgba(222, 222, 222, 1);
+  font-size: 1.25rem;
+}
+
+.query>img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
 
