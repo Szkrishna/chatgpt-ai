@@ -35,33 +35,25 @@ function App() {
           </div>
         </div>
       </div>
-
       <div className='main'>
         <div className='chats'>
           <div className='chat'>
-            <img src={userIcon} alt='user-icon' />
-            <p className='txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat tortor vel eros lacinia, sit amet fermentum urna gravida. Nulla facilisi. Integer luctus, ligula id elementum eleifend, est lacus aliquet est, et eleifend erat nunc in nunc. Curabitur fringilla, eros a porttitor tincidunt, felis enim malesuada turpis, ac mollis nisi libero sit amet eros. Mauris vel sapien sed ligula laoreet convallis. Ut interdum felis ac mauris bibendum rhoncus. Sed sit amet magna sed eros dignissim scelerisque. Phasellus varius tortor nec eros suscipit, a vestibulum elit tincidunt. Integer ut ex a justo vestibulum cursus. Suspendisse potenti.
-
-              Praesent at lacus vel enim suscipit convallis nec at elit. Fusce accumsan enim id sapien mollis, et convallis sapien aliquet. Mauris id magna vel eros fermentum cursus. Nullam aliquet quam id ligula pretium, non dictum urna vehicula. Integer sed elit eget erat cursus fermentum at id nisi. Nam vehicula, risus ac facilisis porttitor, justo arcu eleifend elit, eget tincidunt erat risus a felis. Suspendisse auctor, ex ac malesuada finibus, nisl arcu consequat orci, eget convallis eros libero id enim. Donec id augue magna. Suspendisse luctus justo sit amet sollicitudin dictum.
-
-              Vestibulum feugiat, elit nec congue efficitur, orci velit egestas ipsum, nec pharetra enim nulla sit amet lectus. Sed posuere lacus ac purus gravida volutpat. Pellentesque tempus metus in lorem efficitur, id mollis odio luctus. Quisque efficitur felis vel nunc molestie dapibus. Ut suscipit nisi in massa mollis, sit amet gravida ligula cursus. Pellentesque ut urna nisi. Nam eu augue bibendum, dapibus lectus id, fermentum libero. Etiam vel odio vel justo tempor vestibulum. Integer vestibulum ultrices felis nec scelerisque. Nulla ac tristique lorem, ac fermentum quam.</p>
+            <img className='chatImg' src={userIcon} alt='user-icon' />
+            <p className='txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className='chat'>
-            <img src={gptImgLogo} alt='gpt-icon' />
-            <p className='txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat tortor vel eros lacinia, sit amet fermentum urna gravida. Nulla facilisi. Integer luctus, ligula id elementum eleifend, est lacus aliquet est, et eleifend erat nunc in nunc. Curabitur fringilla, eros a porttitor tincidunt, felis enim malesuada turpis, ac mollis nisi libero sit amet eros. Mauris vel sapien sed ligula laoreet convallis. Ut interdum felis ac mauris bibendum rhoncus. Sed sit amet magna sed eros dignissim scelerisque. Phasellus varius tortor nec eros suscipit, a vestibulum elit tincidunt. Integer ut ex a justo vestibulum cursus. Suspendisse potenti.
-
-              Praesent at lacus vel enim suscipit convallis nec at elit. Fusce accumsan enim id sapien mollis, et convallis sapien aliquet. Mauris id magna vel eros fermentum cursus. Nullam aliquet quam id ligula pretium, non dictum urna vehicula. Integer sed elit eget erat cursus fermentum at id nisi. Nam vehicula, risus ac facilisis porttitor, justo arcu eleifend elit, eget tincidunt erat risus a felis. Suspendisse auctor, ex ac malesuada finibus, nisl arcu consequat orci, eget convallis eros libero id enim. Donec id augue magna. Suspendisse luctus justo sit amet sollicitudin dictum.
-
-              Vestibulum feugiat, elit nec congue efficitur, orci velit egestas ipsum, nec pharetra enim nulla sit amet lectus. Sed posuere lacus ac purus gravida volutpat. Pellentesque tempus metus in lorem efficitur, id mollis odio luctus. Quisque efficitur felis vel nunc molestie dapibus. Ut suscipit nisi in massa mollis, sit amet gravida ligula cursus. Pellentesque ut urna nisi. Nam eu augue bibendum, dapibus lectus id, fermentum libero. Etiam vel odio vel justo tempor vestibulum. Integer vestibulum ultrices felis nec scelerisque. Nulla ac tristique lorem, ac fermentum quam.</p>
+          <div className='chat bot'>
+            <img className='chatImg' src={gptImgLogo} alt='gpt-icon' />
+            <p className='txt'>Vestibulum feugiat, elit nec congue efficitur, orci velit egestas ipsum, nec pharetra enim nulla sit amet lectus. Sed posuere lacus ac purus gravida volutpat. Pellentesque tempus metus in lorem efficitur, id mollis odio luctus. Quisque efficitur felis vel nunc molestie dapibus. Ut suscipit nisi in massa mollis, sit amet gravida ligula cursus. Pellentesque ut urna nisi. Nam eu augue bibendum, dapibus lectus id, fermentum libero. Etiam vel odio vel justo tempor vestibulum. Integer vestibulum ultrices felis nec scelerisque. Nulla ac tristique lorem, ac fermentum quam.</p>
           </div>
         </div>
         <div className='chatFooter'>
-          <div className='inp' >
-            <input className='text' placeholder='send a message' />
+          <div className='inp'>
+            <input className='text' placeholder='Send a message' />
             <button className='send'>
               <img src={sendBtn} alt='send' />
             </button>
           </div>
+          <p>ChatGPT can make mistakes. Check important info.</p>
         </div>
       </div>
     </div>
