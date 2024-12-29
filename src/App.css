@@ -79,7 +79,7 @@ body {
   border-radius: 0.5rem;
   border: 1px solid rgba(98, 98, 98, 1);
   color: rgba(222, 222, 222, 1);
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 
 .query>img {
@@ -88,4 +88,30 @@ body {
   height: 1.75rem;
 }
 
+.lowerSide {
+  padding: 2rem;
+}
 
+.listItems{
+  margin: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.listItemsImg {
+  margin: 1rem;
+  padding-right: 1rem;
+}
+
+.listItems:nth-child(1)>.listItemsImg {
+  margin-right: 0.5rem;
+}
+
+.listItems:nth-child(2)>.listItemsImg {
+  margin-right: 1rem;
+}
+
+.listItems:nth-child(3)>.listItemsImg {
+  margin-right: 0.7rem;
+}
