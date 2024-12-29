@@ -48,10 +48,12 @@ function App() {
         </div>
         <div className='chatFooter'>
           <div className='inp'>
-            <input className='text' placeholder='Send a message' />
-            <button className='send'>
-              <img src={sendBtn} alt='send' />
-            </button>
+            <input className='text' placeholder='Message ChatGPT' />
+            <div className='inpBottom'>
+              <button className='send'>
+                <img src={sendBtn} alt='send' />
+              </button>
+            </div>
           </div>
           <p>ChatGPT can make mistakes. Check important info.</p>
         </div>
